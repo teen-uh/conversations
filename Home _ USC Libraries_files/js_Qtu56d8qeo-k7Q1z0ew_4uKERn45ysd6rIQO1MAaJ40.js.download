@@ -1,0 +1,38 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  //let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+/* @license GPL-2.0-or-later https://www.drupal.org/licensing/faq */
+!function(document,Drupal,$){'use strict';Drupal.behaviors.footerMenus={attach:function attach(context){var $footerMenu=$('.site-footer__menus--item',context);var $headingMenu=$('.site-footer__menu--heading',context);function bindMenu($container,button){$container.each(function(){var $footerMenuItem=$(this);$footerMenuItem.find(button).on('click',function(){var $menuList=$footerMenuItem.find('.site-footer__menu');$menuList.toggle();$menuList.not($menuList).hide();$container.not($footerMenuItem).removeClass('is-open');$footerMenuItem.toggleClass('is-open');if($(this).attr('aria-expanded')==='true')$(this).attr('aria-expanded','false');else $(this).attr('aria-expanded','true');});});}bindMenu($footerMenu,$headingMenu);}};}(document,Drupal,jQuery);;
+!function(document,Drupal,$){'use strict';Drupal.behaviors.newsSlider={attach:function attach(context){$('.js-content-slider',context).slick({slidesToShow:4,slidesToScroll:4,autoplay:false,autoplaySpeed:9000,dots:true,lazyLoad:'ondemand',responsive:[{breakpoint:1400,settings:{slidesToShow:3,slidesToScroll:3}},{breakpoint:1200,settings:{slidesToShow:2,slidesToScroll:2}},{breakpoint:760,settings:{slidesToShow:1,slidesToScroll:1}}]});}};}(document,Drupal,jQuery);;
+
+
+}
+/*
+     FILE ARCHIVED ON 10:29:48 Aug 11, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:50:13 Oct 17, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.527
+  exclusion.robots: 0.017
+  exclusion.robots.policy: 0.006
+  esindex: 0.009
+  cdx.remote: 6.838
+  LoadShardBlock: 53.493 (3)
+  PetaboxLoader3.datanode: 39.681 (4)
+  load_resource: 134.975
+  PetaboxLoader3.resolve: 104.901
+*/

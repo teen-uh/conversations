@@ -1,0 +1,77 @@
+/* These are standard sIFR styles... do not modify */
+
+.sIFR-flash {
+	visibility: visible !important;
+	margin: 0;
+}
+
+.sIFR-replaced {
+	visibility: visible !important;
+}
+
+span.sIFR-alternate {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	display: block;
+	overflow: hidden;
+}
+
+/* Hide Adblock Object tab: the text should show up just fine, not poorly with a tab laid over it. */
+.sIFR-flash + div[adblocktab=true] {
+  display: none !important;
+}
+
+/* These "decoy" styles are used to hide the browser text before it is replaced... the negative-letter spacing in this case is used to make the browser text metrics match up with the sIFR text metrics since the sIFR text in this example is so much narrower... your own settings may vary... any weird sizing issues you may run into are usually fixed by tweaking these decoy styles */
+
+/*
+.sIFR-hasFlash h1 {
+	visibility: hidden;
+}*/
+
+.sIFR-hasFlash h2 {
+	/*visibility: hidden;*/
+	margin: 4px 0 0 0;
+	/*font-size: 55px;*/
+}
+
+.sIFR-hasFlash h3 {
+	/*visibility: hidden;*/
+	
+	/*font-size: 25px;*/
+}
+/*
+.sIFR-hasFlash h4 {
+	visibility: hidden;
+	letter-spacing: -5px;
+	font-size: 21px;
+}
+
+.sIFR-hasFlash h5#pullquote {
+	letter-spacing: -4px;
+	visibility: hidden;
+	font-size: 24px;
+}
+*/
+/*
+     FILE ARCHIVED ON 17:27:39 Jun 24, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:32:36 Oct 10, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.643
+  exclusion.robots: 0.026
+  exclusion.robots.policy: 0.012
+  esindex: 0.013
+  cdx.remote: 6.725
+  LoadShardBlock: 53.899 (3)
+  PetaboxLoader3.datanode: 100.706 (4)
+  load_resource: 227.537
+  PetaboxLoader3.resolve: 131.781
+*/
