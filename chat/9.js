@@ -5,31 +5,36 @@ $(document).ready(function(){
     function nextMsg() {
         if (messages.length == 0) {
             // once there is no more message, do whatever you want
-            alert("growing older...");
-            window.location = "Cool Math Games - Free Online Math Games, Cool Puzzles, and More.html";
+            alert("together into the future...");
+            window.location = "about.html";
         } else {
             if (colour == 'red'){
                 colour = 'orange';
             } else {
                 colour = 'red';
             }
-            $('#eow-title').css('color', colour);
+            $('.entry-title').css('color', colour);
             // change content of message, fade in, wait, fade out and continue with next message
-            $('#eow-title').html(messages.pop()).fadeIn(500).delay(3000).fadeOut(500, nextMsg);
+            $('.entry-title').html(messages.pop()).fadeIn(500).delay(4000).fadeOut(500);
+            console.log(messages);
+            setTimeout(function() {
+                nextMsg();
+            }, 5000);
 
         }
     };
     // list of messages to display
     var messages = [
-        "hehehehe",
-        "this video is so funny",
-        "i think so too!",
-        "ha! i am ninja!!!",
-        "can you come playdate tomorrow too?",
-        "yes!! mommy can i come play againnn?"
+        "haha, do you remember watching that video as a kid?",
+        "so clearly.",
+        "i can’t believe we’re already 20.",
+        "it feels like yesterday when we first did that",
+        "and then next year we’ll be done with school as well",
+        "time passes so quickly",
+        "what do you think our future holds?"
     ].reverse();
 
-    $('#eow-title').delay(3000).fadeOut(500);
+    $('.entry-title').delay(3000).fadeOut(500);
 
     setTimeout(function() {
         nextMsg();

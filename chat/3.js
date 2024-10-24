@@ -6,30 +6,29 @@ $(document).ready(function(){
         if (messages.length == 0) {
             // once there is no more message, do whatever you want
             alert("growing older...");
-            window.location = "Cool Math Games - Free Online Math Games, Cool Puzzles, and More.html";
+            window.location = "UO Best Sellers.html";
         } else {
             if (colour == 'red'){
                 colour = 'orange';
             } else {
                 colour = 'red';
             }
-            $('#eow-title').css('color', colour);
+            $('.profile-gate-label').css('color', colour);
             // change content of message, fade in, wait, fade out and continue with next message
-            $('#eow-title').html(messages.pop()).fadeIn(500).delay(3000).fadeOut(500, nextMsg);
+            $('.profile-gate-label').html(messages.pop()).fadeIn(500).delay(3000).fadeOut(500, nextMsg);
 
         }
     };
     // list of messages to display
     var messages = [
-        "hehehehe",
-        "this video is so funny",
-        "i think so too!",
-        "ha! i am ninja!!!",
-        "can you come playdate tomorrow too?",
-        "yes!! mommy can i come play againnn?"
+        "dude you will not believe what happened today", 
+        "what?? you never tell me things",
+        "jessie got mad at lily in class and now our entire friend group is ruined",
+        "that is SO annoying",
+         "right?? my life is overr"
     ].reverse();
 
-    $('#eow-title').delay(3000).fadeOut(500);
+    $('.profile-gate-label').delay(3000).fadeOut(500);
 
     setTimeout(function() {
         nextMsg();

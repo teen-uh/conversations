@@ -6,30 +6,29 @@ $(document).ready(function(){
         if (messages.length == 0) {
             // once there is no more message, do whatever you want
             alert("growing older...");
-            window.location = "Cool Math Games - Free Online Math Games, Cool Puzzles, and More.html";
+            window.location = "Gmail.html";
         } else {
             if (colour == 'red'){
                 colour = 'orange';
             } else {
                 colour = 'red';
             }
-            $('#eow-title').css('color', colour);
+            $('.c-pwa-live-text-banner__heading').css('color', colour);
             // change content of message, fade in, wait, fade out and continue with next message
-            $('#eow-title').html(messages.pop()).fadeIn(500).delay(3000).fadeOut(500, nextMsg);
+            $('.c-pwa-live-text-banner__heading').html(messages.pop()).fadeIn(500).delay(3000).fadeOut(500, nextMsg);
 
         }
     };
     // list of messages to display
     var messages = [
-        "hehehehe",
-        "this video is so funny",
-        "i think so too!",
-        "ha! i am ninja!!!",
-        "can you come playdate tomorrow too?",
-        "yes!! mommy can i come play againnn?"
+       "ooo that’s cute",
+       "yeah i got my first paycheck so now i get to spend it :p", 
+       "do you want to hangout on saturday?",
+        "duh! let’s invite lily and jessie and celine.",
+         "yay!! i’m so excited, i feel like life has been so fun lately" 
     ].reverse();
 
-    $('#eow-title').delay(3000).fadeOut(500);
+    $('.c-pwa-live-text-banner__heading').delay(3000).fadeOut(500);
 
     setTimeout(function() {
         nextMsg();

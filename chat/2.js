@@ -6,33 +6,39 @@ $(document).ready(function(){
         if (messages.length == 0) {
             // once there is no more message, do whatever you want
             alert("growing older...");
-            window.location = "Cool Math Games - Free Online Math Games, Cool Puzzles, and More.html";
+            window.location = "Netflix.html";
         } else {
             if (colour == 'red'){
                 colour = 'orange';
             } else {
                 colour = 'red';
             }
-            $('#eow-title').css('color', colour);
+            $('.game-title').css('color', colour);
             // change content of message, fade in, wait, fade out and continue with next message
-            $('#eow-title').html(messages.pop()).fadeIn(500).delay(3000).fadeOut(500, nextMsg);
+            $('.game-title').html(messages.pop()).fadeIn(500).delay(4000).fadeOut(500);
+            console.log(messages);
+            setTimeout(function() {
+                nextMsg();
+            }, 5000);
 
         }
     };
     // list of messages to display
     var messages = [
-        "hehehehe",
-        "this video is so funny",
-        "i think so too!",
-        "ha! i am ninja!!!",
-        "can you come playdate tomorrow too?",
-        "yes!! mommy can i come play againnn?"
+        "what game do you want to play?",
+        "you pick", 
+        "hmmm ok", 
+        "my mom told me that you’re moving to china", 
+        "yeah, i am",
+        "wahh i’m going to miss you", 
+        "do you think we can still play games together?",
+        "yeah!"
     ].reverse();
 
-    $('#eow-title').delay(3000).fadeOut(500);
+    $('.game-title').delay(4000).fadeOut(500);
 
     setTimeout(function() {
         nextMsg();
-    }, 4000);
+    }, 5000);
     
 })
